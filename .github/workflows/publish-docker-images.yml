@@ -11,7 +11,7 @@ jobs:
     name: Push Docker images to GitHub Container Register
     runs-on: ubuntu-20.04
     steps:
-      - name: Get commit SHA
+      - name: Get commits SHA
         id: sha
         shell: bash
         run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
